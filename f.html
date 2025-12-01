@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>BrawlGuide // Футболки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    #tshirt-catalog {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+    }
+    #tshirt-catalog th, #tshirt-catalog td {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+    #tshirt-catalog th {
+      background-color: #070000;
+      font-size: 1.2em;
+    }
+    #tshirt-catalog img {
+      max-width: 150px;
+      height: auto;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #ff6600;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #e05500;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Brawl Stars" style="width:100%; height:auto;">
+</header>
+
+<nav>
+  <h1 class="quote bungee-regular">Выбирай свою футболку!</h1>
+  <div class="links">
+     <nav style="display:flex;align-items:center;gap:14px;padding:8px 20px;background:#000;margin:0;border:none;">
+      <a href="https://supercell.com/en/games/brawlstars/.com" target="_blank" rel="noopener noreferrer" title="Перейти на внешний сайт"
+     style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;overflow:hidden;">
+    <img src="log11o.png" alt="Сторонний сайт"
+         style="width:20px;height:20px;display:block;object-fit:contain;border-radius:3px;transition:transform 0.15s ease;">
+      </a>
+    <a href="index.html">Главная</a>
+    <a href="brawlers.html">Бравлеры</a>
+    <a href="modes.html">Режимы</a>
+    <a href="shop.html" class="active">Мерч</a>
+    <a href="test.html">Штаб</a>
+    <a href="contacts.html">Контакты</a>
+  </div>
+</nav>
+
+<main>
+  <section id="tshirt-section">
+    <h2 class="shop-title">Футболки в наличии</h2>
+    <div id="tshirt-catalog"></div>
+
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <img src="log11o.png" alt="BrawlGuide" class="footer-logo">
+    <p>С любовью к играм, <span>BrawlGuide 2025</span></p>
+  </div>
+</footer>
+<script src="f.js"></script>
+</body>
+
+</html>
