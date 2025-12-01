@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>BrawlGuide // Штаб</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Brawl Stars" style="width:100%; height:auto;">
+  </header>
+
+  <nav>
+    <h1 class="quote bungee-regular">Штаб BrawlGuide</h1>
+    <div class="links">
+      <a href="index.html">Главная</a>
+      <a href="brawlers.html">Бравлеры</a>
+      <a href="modes.html">Режимы</a>
+      <a href="shop.html">Мерч</a>
+      <a href="test.html" class="active">Штаб</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+  </nav>
+
+  <main class="staff-page">
+    <h2 class="page-title">Наши лучшие работники</h2>
+    <p class="intro-text">Представляем элиту штаба BrawlGuide — тех, кто делает игру ярче, сайт лучше и мемы смешнее!</p>
+
+    <!-- Работник 1 -->
+    <section class="worker">
+      <img src="worker1.png" alt="Алексей Трофимов" class="worker-photo">
+      <div class="worker-info">
+        <ul class="worker-list">
+          <li>Алексей Трофимов
+            <ul>
+              <li>На каких персонажах играет:
+                <ul>
+                  <li>Шелли</li>
+                  <li>Бык</li>
+                  <li>Эль Примо</li>
+                </ul>
+              </li>
+              <li>Достижения:
+                <ul>
+                  <li>Топ-1 в локальном клубе «BrawlRus»</li>
+                  <li>Разработчик тестов для сайта BrawlGuide</li>
+                  <li>Автор фразы «Кубки — металл, а честь — золото!»</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Работник 2 -->
+    <section class="worker">
+      <img src="worker2.png" alt="Мария Игнатьева" class="worker-photo">
+      <div class="worker-info">
+        <ul class="worker-list">
+          <li>Мария Игнатьева
+            <ul>
+              <li>На каких персонажах играет:
+                <ul>
+                  <li>Пайпер</li>
+                  <li>Беа</li>
+                  <li>Брок</li>
+                </ul>
+              </li>
+              <li>Достижения:
+                <ul>
+                  <li>Победитель турнира «Снайперы Бравла 2024»</li>
+                  <li>Дизайнер баннеров для раздела «Мерч»</li>
+                  <li>Создатель оригинального логотипа BrawlGuide</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Работник 3 -->
+    <section class="worker">
+      <img src="worker3.png" alt="Илья Ковалёв" class="worker-photo">
+      <div class="worker-info">
+        <ul class="worker-list">
+          <li>Илья Ковалёв
+            <ul>
+              <li>На каких персонажах играет:
+                <ul>
+                  <li>Леон</li>
+                  <li>Кроу</li>
+                  <li>Сэнди</li>
+                </ul>
+              </li>
+              <li>Достижения:
+                <ul>
+                  <li>Организатор фан-ивента «Ночь Невидимок»</li>
+                  <li>Создатель базы данных игроков</li>
+                  <li>Разработчик скриптов для тестов</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
