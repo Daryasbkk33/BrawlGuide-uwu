@@ -1044,70 +1044,12 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* Сетка каталога худи */
-#hoodie-catalog {
-  width: 90%;
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 товара в ряд на ПК */
-  gap: 25px;
-}
 
-/* Карточка */
-.hoodie-item {
-  width: 100%;
-  background: #111;
-  border: 2px solid #333;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.25s;
-}
 
-.hoodie-item:hover {
-  transform: scale(1.05);
-}
 
-/* Картинка */
-#hoodie-catalog img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: auto;
-}
 
-/* Кнопка */
-.buy-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 12px;
-  background: #ff6600;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
 
-.buy-button:hover {
-  background: #e05500;
-}
 
-/* Адаптация под планшеты */
-@media (max-width: 768px) {
-  #hoodie-catalog {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Адаптация под телефоны */
-@media (max-width: 480px) {
-  #hoodie-catalog {
-    grid-template-columns: 1fr;
-  }
-}
 /* ======= БАЗОВАЯ АДАПТАЦИЯ ======= */
 html, body {
   max-width: 100%;
@@ -1199,5 +1141,70 @@ button, .buy-button, .btn {
   button, .buy-button, .btn {
     padding: 8px 12px;
     font-size: 0.9rem;
+  }
+}
+/* ===== FLEX-КАТАЛОГ ХУДИ ===== */
+#hoodie-catalog {
+  display: flex;            /* flex-контейнер */
+  flex-wrap: wrap;          /* перенос на новые строки */
+  justify-content: center;  /* центрируем ряд */
+  gap: 20px;                /* отступ между карточками */
+  width: 90%;
+  margin: 30px auto;
+}
+
+.hoodie-item {
+  flex: 1 1 250px; /* растягиваем карточку, минимальная ширина 250px */
+  max-width: 300px; /* чтобы не выросла слишком */
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.25s;
+}
+
+.hoodie-item:hover {
+  transform: scale(1.05);
+}
+
+#hoodie-catalog img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buy-button:hover {
+  background: #e05500;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+
+/* Планшеты — минимум 2 карточки */
+@media (max-width: 768px) {
+  .hoodie-item {
+    flex: 1 1 45%; /* 2 в ряд */
+  }
+}
+
+/* Телефоны — 1 карточка */
+@media (max-width: 480px) {
+  .hoodie-item {
+    flex: 1 1 90%; /* 1 в ряд */
   }
 }
