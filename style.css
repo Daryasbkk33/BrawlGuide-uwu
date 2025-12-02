@@ -1061,6 +1061,7 @@ body {
 
 /* Карточка */
 .hoodie-item {
+  width: 100%;
   background: #111;
   border: 2px solid #333;
   border-radius: 12px;
@@ -1204,33 +1205,5 @@ button, .buy-button, .btn {
   button, .buy-button, .btn {
     padding: 8px 12px;
     font-size: 0.9rem;
-  }
-}
-/* ===== АДАПТАЦИЯ КАРТОЧЕК ===== */
-
-/* На больших экранах — можно 3–4 в ряд */
-#figures-catalog, #hoodie-catalog, #tshirt-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Общий стиль для карточек */
-.figure-item, .hoodie-item, .tshirt-item {
-  width: 250px; /* нормальная ширина на ПК */
-}
-
-/* ===== Адаптация под планшеты ===== */
-@media (max-width: 900px) {
-  .figure-item, .hoodie-item, .tshirt-item {
-    width: 45%; /* две карточки в ряд */
-  }
-}
-
-/* ===== Адаптация под телефон ===== */
-@media (max-width: 600px) {
-  .figure-item, .hoodie-item, .tshirt-item {
-    width: 90%; /* ОДНА карточка на всю ширину */
   }
 }
