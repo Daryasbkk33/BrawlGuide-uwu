@@ -890,12 +890,7 @@ body {
   object-fit: cover;       /* чтобы картинка заполняла квадрат без искажений */
   border-radius: 10px;     /* закругленные углы, как у тебя в других элементах */
 }
-#hoodie-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+
 
 .hoodie-item {
   width: 200px;
