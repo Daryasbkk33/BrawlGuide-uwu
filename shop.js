@@ -1,4 +1,3 @@
-// Блок для худи
 const hoodieCatalog = document.getElementById("hoodie-catalog");
 
 const hoodies = [
@@ -11,16 +10,19 @@ const hoodies = [
 ];
 
 hoodies.forEach(h => {
-  const item = document.createElement("div");
-  item.className = "hoodie-item";
+  const col = document.createElement("div");
+  col.className = "col-6 col-md-4 col-lg-3"; // адаптивная колонка
 
-  item.innerHTML = `
-    <img src="${h.img}" alt="${h.name}">
-    <h3>${h.name}</h3>
-    <p>${h.price} ₽</p>
-    <a href="${h.link}" class="buy-button">Купить</a>
+  col.innerHTML = `
+    <div class="card h-100 text-center">
+      <img src="${h.img}" class="card-img-top" alt="${h.name}">
+      <div class="card-body">
+        <h5 class="card-title">${h.name}</h5>
+        <p class="card-text">${h.price} ₽</p>
+        <a href="${h.link}" class="btn btn-primary">Купить</a>
+      </div>
+    </div>
   `;
 
-  hoodieCatalog.appendChild(item);
+  hoodieCatalog.appendChild(col);
 });
-
