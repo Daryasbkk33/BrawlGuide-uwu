@@ -1182,3 +1182,69 @@ button, .buy-button, .btn {
     flex: 1 1 90%; /* 1 в ряд */
   }
 }
+/* === КАТАЛОГ ХУДИ — НОРМАЛЬНЫЙ АДАПТИВ === */
+
+#hoodie-catalog {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.hoodie-item {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.25s;
+}
+
+.hoodie-item:hover {
+  transform: scale(1.05);
+}
+
+.hoodie-item img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.hoodie-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buy-button:hover {
+  background: #e05500;
+}
+
+/* === Планшеты === */
+@media (max-width: 768px) {
+  #hoodie-catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === Телефоны === */
+@media (max-width: 480px) {
+  #hoodie-catalog {
+    grid-template-columns: 1fr;
+  }
+}
